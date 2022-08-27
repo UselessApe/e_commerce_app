@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "725337253903",
+    "project_id": "useless-ape-e-commerce-app",
+    "storage_bucket": "useless-ape-e-commerce-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:725337253903:android:ca997d4257ae83c8d55b7a",
+        "android_client_info": {
+          "package_name": "com.example.e_commerce_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "725337253903-l8rdcr6lg5m2n1plii5n72iu2s0doq8u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwfjUKdBmEfxwCszkNOWk65bjtGYlrG7M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "725337253903-l8rdcr6lg5m2n1plii5n72iu2s0doq8u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
