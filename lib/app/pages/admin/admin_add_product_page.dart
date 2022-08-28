@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:e_commerce_app/app/providers.dart';
 import 'package:e_commerce_app/models/product_model.dart';
+import 'package:e_commerce_app/utils/snackbars.dart';
 import 'package:e_commerce_app/widgets/input_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -38,6 +39,8 @@ class _AdminAddProductPageState extends ConsumerState<AdminAddProductPage> {
             price: double.parse(priceEditingController.text),
             imageUrl: imageUrl),
       );
+      openIconSnackBar(context, "Product added sucessfully",
+          const Icon(Icons.check, color: Colors.white));
       Navigator.pop(context);
     }
 
