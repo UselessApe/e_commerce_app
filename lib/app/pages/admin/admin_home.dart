@@ -2,10 +2,10 @@ import 'package:e_commerce_app/app/pages/admin/admin_add_product_page.dart';
 import 'package:e_commerce_app/app/providers.dart';
 import 'package:e_commerce_app/models/product_model.dart';
 import 'package:e_commerce_app/utils/snackbars.dart';
+import 'package:e_commerce_app/widgets/empty_widget.dart';
 import 'package:e_commerce_app/widgets/product_list_tile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:lottie/lottie.dart';
 
 class AdminHome extends ConsumerWidget {
   const AdminHome({Key? key}) : super(key: key);
@@ -35,17 +35,7 @@ class AdminHome extends ConsumerWidget {
             if (snapshot.connectionState == ConnectionState.active &&
                 snapshot.data != null) {
               if (snapshot.data!.isEmpty) {
-                return Center(
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      const Text("No products yet..."),
-                      Lottie.asset(
-                        "assets/anim/empty.json",
-                      ),
-                    ],
-                  ),
-                );
+                return const EmptyWidget();
               }
               return ListView.builder(
                   itemCount: snapshot.data!.length,
