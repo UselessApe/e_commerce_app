@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/app/pages/user/product_detail.dart';
 import 'package:e_commerce_app/app/providers.dart';
 import 'package:e_commerce_app/models/product_model.dart';
 import 'package:e_commerce_app/widgets/empty_widget.dart';
@@ -18,8 +19,9 @@ class ProductDisplay extends ConsumerWidget {
               return const EmptyWidget();
             }
             return SizedBox(
-              height: MediaQuery.of(context).size.height,
+              height: MediaQuery.of(context).size.height / 1.8,
               child: GridView.builder(
+                padding: const EdgeInsets.only(top: 10, left: 40),
                 scrollDirection: Axis.vertical,
                 itemCount: snapshot.data?.length,
                 shrinkWrap: true,
@@ -29,11 +31,12 @@ class ProductDisplay extends ConsumerWidget {
                   final product = snapshot.data![index];
                   return GestureDetector(
                     onTap: () {
-                      // Navigator.push(
-                      //     context,
-                      //     MaterialPageRoute(
-                      //         builder: (context) =>
-                      //             ProductDetail(product: product)));
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ProductDetail(product: product),
+                        ),
+                      );
                     },
                     child: Container(
                       padding: const EdgeInsets.all(10.0),
