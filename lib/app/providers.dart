@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/models/bag_view_model.dart';
 import 'package:e_commerce_app/services/firestore_service.dart';
 import 'package:e_commerce_app/services/storage_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -33,3 +34,7 @@ final storageProvider = Provider<StorageService?>((ref) {
 });
 
 final addImageProvider = StateProvider<XFile?>((_) => null);
+
+final bagProvider = ChangeNotifierProvider<BagViewModel>((ref) {
+  return BagViewModel();
+});

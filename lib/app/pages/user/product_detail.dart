@@ -1,3 +1,5 @@
+import 'package:e_commerce_app/app/pages/user_bag.dart';
+import 'package:e_commerce_app/app/providers.dart';
 import 'package:e_commerce_app/models/product_model.dart';
 import 'package:e_commerce_app/widgets/user_top_bar.dart';
 import 'package:flutter/material.dart';
@@ -97,7 +99,15 @@ class ProductDetail extends ConsumerWidget {
                 height: 25,
               ),
               GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    ref.read(bagProvider).addProduct(product);
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const UserBag(),
+                      ),
+                    );
+                  },
                   child: Container(
                     width: double.infinity,
                     height: 50,
