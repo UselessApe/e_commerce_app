@@ -16,7 +16,7 @@ class BagViewModel extends ChangeNotifier {
     notifyListeners();
   }
 
-  void clearBag(ProductModel product) {
+  void clearBag() {
     productsBag.clear();
     notifyListeners();
   }

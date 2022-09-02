@@ -1,5 +1,6 @@
 import 'package:e_commerce_app/models/bag_view_model.dart';
 import 'package:e_commerce_app/services/firestore_service.dart';
+import 'package:e_commerce_app/services/payment_service.dart';
 import 'package:e_commerce_app/services/storage_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -37,4 +38,8 @@ final addImageProvider = StateProvider<XFile?>((_) => null);
 
 final bagProvider = ChangeNotifierProvider<BagViewModel>((ref) {
   return BagViewModel();
+});
+
+final paymentProvider = Provider<PaymentService>((ref) {
+  return PaymentService();
 });
