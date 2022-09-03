@@ -61,11 +61,11 @@ class ProductDisplay extends ConsumerWidget {
                           Text(
                             product.name.toUpperCase(),
                             style: const TextStyle(
-                                fontWeight: FontWeight.bold, fontSize: 16),
+                                fontWeight: FontWeight.bold, fontSize: 10),
                           ),
                           const SizedBox(height: 5),
                           Text(
-                            "\$${product.price}",
+                            "\€${product.price}",
                             style: TextStyle(
                                 color: Theme.of(context).colorScheme.primary,
                                 fontWeight: FontWeight.bold,

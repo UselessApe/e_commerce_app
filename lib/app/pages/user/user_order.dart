@@ -35,7 +35,7 @@ class UserOrders extends ConsumerWidget {
                           title: Text(
                               order.products.map((e) => e.name).join(', ')),
                           subtitle: Text(order.timestamp.toDate().toString()),
-                          trailing: Text("\$$total"),
+                          trailing: Text("\€$total"),
                         ));
                   });
             }

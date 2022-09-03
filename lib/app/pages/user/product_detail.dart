@@ -37,7 +37,7 @@ class ProductDetail extends ConsumerWidget {
                 height: 15,
               ),
               Text(
-                "My Store",
+                "Lyska Cloud Store",
                 style: TextStyle(
                     color: Colors.grey[500],
                     fontWeight: FontWeight.w300,
@@ -87,7 +87,7 @@ class ProductDetail extends ConsumerWidget {
                         fontSize: 18),
                   ),
                   Text(
-                    "\$${product.price}",
+                    "\€${product.price}",
                     style: const TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.w400,

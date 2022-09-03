@@ -25,16 +25,16 @@ class ProductBanner extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: const [
               Text(
-                "New Release",
+                "Atemschutzmasken",
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 12,
+                  fontSize: 14,
                   fontWeight: FontWeight.normal,
                 ),
               ),
               SizedBox(height: 10),
               Text(
-                "Cool shoes",
+                "zum Bestpreis",
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
@@ -43,7 +43,7 @@ class ProductBanner extends StatelessWidget {
             ],
           ),
           Image.network(
-            "https://firebasestorage.googleapis.com/v0/b/flutterbricks-public.appspot.com/o/shoe2.png?alt=media&token=8c9f66f4-bbfb-42f2-80ce-1811e7d7fab7",
+            "https://media.igefa.de/files/images_idealclean/2213753.jpg",
             width: 125,
           )
         ],
