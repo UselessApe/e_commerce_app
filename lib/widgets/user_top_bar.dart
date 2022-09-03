@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/app/pages/user/user_order.dart';
 import 'package:e_commerce_app/app/pages/user_bag.dart';
 import 'package:flutter/material.dart';
 
@@ -15,8 +16,8 @@ class UserTopBar extends StatelessWidget {
         const Spacer(),
         IconButton(
           onPressed: () {
-            // Navigator.push(context,
-            //     MaterialPageRoute(builder: (context) => const UserOrders()));
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const UserOrders()));
           },
           icon: const Icon(Icons.menu),
         ),
